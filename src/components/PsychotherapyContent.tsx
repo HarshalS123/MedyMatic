@@ -291,7 +291,7 @@ export const PsychotherapyContent = () => {
                         Maximize Your Revenue with MedyMatic Business Solutions
                     </h2>
                     <p className="text-2xl text-white">
-                        With Expertise and knowledge, and cost effective services Healthwave Innovate is a partner you can trust for your Behavioral Health Practice.
+                        With Expertise and knowledge, and cost effective services. MedyMatic is a partner you can trust for your Behavioral Health Practice.
                     </p>
                 </div>
             </div>
