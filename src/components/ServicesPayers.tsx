@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ServicesAboutProps {
     svg: JSX.Element; // Changed from `string` to `JSX.Element`
     heading: string;
