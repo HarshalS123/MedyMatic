@@ -171,7 +171,7 @@ export const Navbar = () => {
                   onMouseLeave={() => setShowBlogDropdown(false)}
                 >
                   <button
-                    className={`text-[17px] ${buttonVariants({
+                    className={`text-[18px] text-[#444444] ${buttonVariants({
                       variant: "ghost",
                     })}`}
                   >
@@ -196,7 +196,7 @@ export const Navbar = () => {
                   rel="noreferrer noopener"
                   href={href}
                   key={i}
-                  className={`text-[17px] ${buttonVariants({
+                  className={`text-[18px] text-[#444444] ${buttonVariants({
                     variant: "ghost",
                   })}`}
                 >
@@ -207,7 +207,7 @@ export const Navbar = () => {
             <a
               rel="noreferrer noopener"
               href="/clientsupport"
-              className={`text-[#219072] hover:text-[#219072] text-[17px] ${buttonVariants({
+              className={`text-[#219072] hover:text-[#219072] text-[18px] ${buttonVariants({
                 variant: "ghost",
               })}`}
             >

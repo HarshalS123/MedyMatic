@@ -5,8 +5,7 @@ export const CareerForm = () => {
     return (
         <>
             <SubPagesHero
-                title="Career Form"
-                description="Our mission is to simplify medical billing, and our vision is to empower healthcare providers to focus on patient care."
+                title="Apply Now!"
             />
             <FormCareer />
         </>
