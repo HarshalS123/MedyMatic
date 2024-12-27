@@ -4,14 +4,14 @@ export const Footer = () => {
   return (
     <footer id="footer" className="bg-[#219072] text-white">
 
-      <section className="container py-20 grid grid-cols-2 xl:grid-cols-6 gap-x-12 gap-y-8">
+      <section className="container md:px-24 py-20 grid grid-cols-2 xl:grid-cols-6 gap-x-12 gap-y-8">
         <div className="col-span-full xl:col-span-2">
           <a
             rel="noreferrer noopener"
             href="/"
             className=" flex flex-col gap-2"
           >
-            <LogoIcon />
+            <h6 className="font-bold text-xl">MedyMatic <br /> Business Solutions</h6>
             <p>
               Simplifying Medical Billing, <br /> Empowering Healthcare Providers.
             </p>
