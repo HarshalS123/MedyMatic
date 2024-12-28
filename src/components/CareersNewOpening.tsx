@@ -6,11 +6,11 @@ export const CareersNewOpening = () => {
                 <ul className="text-center flex flex-col gap-1 text-xl w-11/12">
                     <li>• Medical Billing Specialist</li>
                     <li>• Revenue Cycle Analyst</li>
-                    <li>• Payer Call Center Representative</li>
+                    {/* <li>• Payer Call Center Representative</li>
                     <li>• Rejection Management Specialist</li>
                     <li>
                         • Customer Support Specialist <span>(Chat Support)</span>
-                    </li>
+                    </li> */}
                 </ul>
 
             </div>
