@@ -69,7 +69,7 @@ export const TelemedicineContent = () => {
                     <div className="flex flex-col gap-2  items-center justify-center">
                         <a
                             rel="noreferrer noopener"
-                            href="/assets/TeleHealth Billing Guidelines.xlsx"
+                            href="/TeleHealth Billing Guidelines.xlsx"
                             download
                             className={`border w-full ${buttonVariants({ size: "lg" })}`}
                         >

@@ -36,9 +36,9 @@ export const Hero = () => {
           profitability and sustainability for their practices.
         </p>
 
-        <div className="space-y-4 md:space-y-0 md:space-x-4">
+        <a className="space-y-4 md:space-y-0 md:space-x-4" href="/contact">
           <Button className="w-full md:w-1/3 bg-[#4A90E2]">Get Started</Button>
-        </div>
+        </a>
       </div>
 
       {/* Video credits */}
