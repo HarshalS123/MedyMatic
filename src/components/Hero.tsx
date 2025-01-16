@@ -6,7 +6,7 @@ export const Hero = () => {
     <section className="relative container grid lg:grid-cols-2 place-items-center py-16 px-20 md:py-20 gap-2 overflow-hidden">
       {/* Background Video */}
       <video
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute inset-0 w-screen h-full object-cover z-0"
         autoPlay
         loop
         muted
