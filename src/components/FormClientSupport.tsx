@@ -24,7 +24,7 @@ export const FormClientSupport = () => {
     formData.append("supportingDocs", supportingDocs); // Ensure the field name matches the backend
 
     try {
-      const response = await fetch("http://localhost:3000/submit-client-support", {
+      const response = await fetch("https://medymatic-backend.onrender.com/submit-client-support", {
         method: "POST",
         body: formData,
       });

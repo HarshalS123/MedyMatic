@@ -22,7 +22,7 @@ export const FormContact = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:3000/submit-contact-us", {
+      const response = await fetch("https://medymatic-backend.onrender.com/submit-contact-us", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

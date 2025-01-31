@@ -22,7 +22,7 @@ export const FormCareer = () => {
         formData.append("resumes", resume); // Ensure the field name matches the backend
 
         try {
-            const response = await fetch("http://localhost:3000/submit-careers", {
+            const response = await fetch("https://medymatic-backend.onrender.com/submit-careers", {
                 method: "POST",
                 body: formData,
             });
