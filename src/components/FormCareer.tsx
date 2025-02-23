@@ -4,6 +4,7 @@ import { buttonVariants } from "./ui/button";
 export const FormCareer = () => {
     const [resume, setResume] = useState<File | null>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [fileName, setFileName] = useState("");
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -44,6 +45,9 @@ export const FormCareer = () => {
     const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         if (event.target.files && event.target.files[0]) {
             setResume(event.target.files[0]);
+            setFileName(event.target.files[0].name);
+        } else {
+            setFileName("");
         }
     };
 
@@ -156,7 +160,7 @@ export const FormCareer = () => {
                                     />
                                 </svg>
                                 <p className="text-sm text-black">
-                                    Attach Resume* [PDF/Word Format]
+                                    {fileName ? `${fileName} attached` : "Attach Resume* [PDF/Word Format]"}
                                 </p>
                             </div>
                             <input

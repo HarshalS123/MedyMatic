@@ -4,6 +4,7 @@ import { buttonVariants } from "./ui/button";
 export const FormClientSupport = () => {
   const [supportingDocs, setSupportingDocs] = useState<File | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [fileName, setFileName] = useState("");
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -46,6 +47,9 @@ export const FormClientSupport = () => {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files[0]) {
       setSupportingDocs(event.target.files[0]);
+      setFileName(event.target.files[0].name);
+    } else {
+      setFileName("");
     }
   };
 
@@ -125,7 +129,7 @@ export const FormClientSupport = () => {
                   />
                 </svg>
                 <p className="text-sm text-black">
-                  Attach supporting documents (PNG, JPG, PDF)
+                  {fileName ? `${fileName} attached` : "Attach supporting documents (PNG, JPG, PDF)"}
                 </p>
               </div>
               <input

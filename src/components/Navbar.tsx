@@ -51,7 +51,7 @@ export const Navbar = () => {
   return (
     <header className="sticky top-0 py-5 z-40 w-full bg-white">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 w-full gap-20 md:gap-28 flex justify-between">
+        <NavigationMenuList className="container h-14 w-full gap-20 xl:gap-64 flex flex-row justify-between">
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"

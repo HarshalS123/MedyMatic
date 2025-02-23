@@ -39,7 +39,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="/privacy-policy"
               className=""
             >
               Privacy Policy
@@ -49,7 +49,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="/terms-of-use"
               className=""
             >
               Term of Use
@@ -60,7 +60,7 @@ export const Footer = () => {
       <hr className="w-10/12 mx-auto border-white" />
       <section className="container py-14 text-center">
         <h3>
-          &copy; 2024 MedyMatic Business Solutions. All rights reserved.
+          &copy; 2025 MedyMatic Business Solutions. All rights reserved.
         </h3>
       </section>
     </footer>
