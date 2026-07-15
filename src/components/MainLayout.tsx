@@ -110,25 +110,25 @@ export function MainLayout() {
                   <Mail size={16} className="inline-block" />
                   <p className="hover:text-brand-red">info@medymatic.com</p>
                 </a>
-                <a href="tel:+917920176347" target="_blank" rel="noopener noreferrer" className="break-all sm:break-normal flex items-center gap-2">
+                <a href="tel:+917972176347" target="_blank" rel="noopener noreferrer" className="break-all sm:break-normal flex items-center gap-2">
                   <Phone size={16} className="inline-block" />
                   <p className="hover:text-brand-red">
-                    +91 79201 76347
+                    +91 79721 76347
                   </p>
                 </a>
-                <a href="tel:+13475096793" target="_blank" rel="noopener noreferrer" className="break-all sm:break-normal flex items-center gap-2">
+                <a href="tel:+17627165164" target="_blank" rel="noopener noreferrer" className="break-all sm:break-normal flex items-center gap-2">
                   <Phone size={16} className="inline-block" />
                   <p className="hover:text-brand-red">
-                    +1 347 509-6793
+                    +1 76271 65164
                   </p>
                 </a>
                 <a href="https://maps.app.goo.gl/pB9zezepqB3azvuH6" target="_blank" rel="noopener noreferrer" className="break-all sm:break-normal flex items-center gap-2">
                   <MapPin size={16} className="inline-block  min-w-[20px]" />
-                  <p className="hover:text-brand-red">78, Jetvan Housing Society, Shastri Layout, Nagpur, 440025</p>
+                  <p className="hover:text-brand-red">76, Jetvan Housing Society, Shastri Layout, Nagpur, 440025</p>
                 </a>
                 <a href="https://maps.app.goo.gl/6q3r7bxdbpw2ThGu8" target="_blank" rel="noopener noreferrer" className="break-all sm:break-normal flex items-center gap-2">
                   <MapPin size={16} className="inline-block  min-w-[20px]" />
-                  <p className="hover:text-brand-red">11911 Government Ave, Dover, DE 19904, United States</p>
+                  <p className="hover:text-brand-red">11911 S Governors Ave, Dover, DE 19904, United States</p>
                 </a>
               </div>
             </div>

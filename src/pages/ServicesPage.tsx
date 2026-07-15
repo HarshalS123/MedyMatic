@@ -36,7 +36,7 @@ const providerServices: ServiceItem[] = [
     title: "RCM Consultation",
     description:
       "We assess your existing revenue cycle workflows and identify gaps in claims processing, denial management, and collections, then build a tailored roadmap for improvement.",
-    image: "/rcm-consultation.png",
+    image: "/rcm-consultation.webp",
   },
   {
     id: "ar-denial-management",
@@ -44,7 +44,7 @@ const providerServices: ServiceItem[] = [
     title: "Accounts Receivable (AR) & Denial Management",
     description:
       "Our team works aged AR and denied claims systematically, reducing days in AR and recovering revenue that would otherwise be written off.",
-    image: "/ar-denial.png",
+    image: "/ar-denial.webp",
   },
   {
     id: "medical-coding",
@@ -52,7 +52,7 @@ const providerServices: ServiceItem[] = [
     title: "Medical Coding",
     description:
       "Certified coders assign accurate CPT, ICD-10, and HCPCS codes across specialties, minimizing claim rejections and supporting compliant reimbursement.",
-    image: "/medical-coding.png",
+    image: "/medical-coding.webp",
   },
   {
     id: "eligibility-verification",
@@ -60,7 +60,7 @@ const providerServices: ServiceItem[] = [
     title: "Eligibility & Benefits Verification",
     description:
       "We verify patient coverage and benefits ahead of visits, reducing front-end denials and giving your team accurate information before service is rendered.",
-    image: "/eligibility-and-benefits.png",
+    image: "/eligibility-and-benefits.webp",
   },
   {
     id: "payment-posting",
@@ -68,7 +68,7 @@ const providerServices: ServiceItem[] = [
     title: "Payment Posting",
     description:
       "Accurate, timely posting of payer and patient payments keeps your financial records reconciled and gives you a clear view of true outstanding balances.",
-    image: "/payment-posting.png",
+    image: "/payment-posting.webp",
   },
   {
     id: "patient-scheduling",
@@ -76,7 +76,7 @@ const providerServices: ServiceItem[] = [
     title: "Patient Scheduling Services",
     description:
       "Our scheduling support reduces no-shows and gaps in your calendar, keeping patient flow steady and provider time fully utilized.",
-    image: "/patient-scheduling-services.png",
+    image: "/patient-scheduling-services.webp",
   },
   {
     id: "credentialing-services",
@@ -84,7 +84,7 @@ const providerServices: ServiceItem[] = [
     title: "Credentialing Services",
     description:
       "We manage payer enrollment and credentialing end to end, so providers can bill and get reimbursed without administrative delays.",
-    image: "/credentialing-services.png",
+    image: "/credentialing-services.webp",
   },
 ];
 
@@ -95,7 +95,7 @@ const payerServices: ServiceItem[] = [
     title: "Payer Call Center",
     description:
       "Dedicated call center support for provider and member questions, benefits guidance, and timely issue resolution.",
-    image: "/payer-call-center.png",
+    image: "/payer-call-center.webp",
   },
   {
     id: "rejection-management",
@@ -103,7 +103,7 @@ const payerServices: ServiceItem[] = [
     title: "Rejection Management",
     description:
       "Structured rejection workflows that improve claims accuracy, resolve processing issues, and reduce avoidable rework.",
-    image: "/rejection-management.png",
+    image: "/rejection-management.webp",
   },
   {
     id: "chat-support-services",
@@ -111,7 +111,7 @@ const payerServices: ServiceItem[] = [
     title: "Chat Support Services",
     description:
       "Responsive chat assistance for provider and member inquiries, helping payers deliver clear support in real time.",
-    image: "/chat-support.png",
+    image: "/chat-support.webp",
   },
 ];
 
@@ -230,7 +230,7 @@ export function ServicesPage() {
     <>
       <section className="relative isolate overflow-hidden bg-gray-50 pb-20 pt-8">
         <div className="absolute inset-0 lg:hidden" aria-hidden="true">
-          <img src="/figma-image-2.png" alt="" className="h-full w-full object-cover" />
+          <img src="/services-banner.webp" alt="Medymatic services" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/55" />
         </div>
 
@@ -274,7 +274,7 @@ export function ServicesPage() {
 
               <div className="absolute right-0 top-0 h-[24rem] w-[24rem] overflow-hidden rounded-full bg-white shadow-[0_30px_80px_rgba(17,24,39,0.08)] sm:h-[27rem] sm:w-[27rem] lg:h-[29rem] lg:w-[29rem]">
                 <img
-                  src="/services-banner.png"
+                  src="/services-banner.webp"
                   alt="Healthcare revenue cycle specialists reviewing claims dashboards"
                   className="h-full w-full object-cover"
                 />

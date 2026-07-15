@@ -1,6 +1,5 @@
 import type { ComponentType } from "react";
 import { AboutPage } from "../pages/AboutPage";
-import { AppointmentPage } from "../pages/AppointmentPage";
 import { BlogPage } from "../pages/BlogPage";
 import { CareerPage } from "../pages/CareerPage";
 import { ClientSupportPage } from "../pages/ClientSupportPage";
@@ -34,7 +33,6 @@ export const routes: AppRoute[] = [
   { path: "/career", label: "Career", element: CareerPage },
   { path: "/client-support", label: "Client Support", element: ClientSupportPage },
   { path: "/contact", label: "Contact", element: ContactPage },
-  { path: "/appointment", label: "Appointment", element: AppointmentPage },
   { path: "/privacy-policy", label: "Privacy Policy", element: PrivacyPolicyPage },
   { path: "/terms", label: "Terms of Use", element: TermsPage },
 ];

@@ -41,25 +41,25 @@ const homeServices = [
 const whyMedymatic = [
   {
     step: "One",
-    image: "/revenue-cycle.png",
+    image: "/revenue-cycle.webp",
     title: "Dedicated Revenue Cycle Specialists",
     text: "Experienced healthcare billing professionals focused on improving workflow consistency and reimbursement performance.",
   },
   {
     step: "Two",
-    image: "/hipaa.png",
+    image: "/hipaa.webp",
     title: "HIPAA-Compliant Operations",
     text: "Secure healthcare billing workflows aligned with industry compliance and patient data protection standards.",
   },
   {
     step: "Three",
-    image: "/report.png",
+    image: "/report.webp",
     title: "Transparent Reporting & Insights",
     text: "Structured reporting systems that provide visibility into claims, reimbursements, denials, and operational performance.",
   },
   {
     step: "Four",
-    image: "/healthcare.png",
+    image: "/healthcare.webp",
     title: "Scalable Healthcare Support",
     text: "Flexible operational support solutions designed for independent clinics, specialty providers, and growing healthcare organizations.",
   },
@@ -176,7 +176,7 @@ const toggleService = (service: string) => {
           <div className="mt-14 grid gap-8 lg:grid-cols-[0.95fr_1fr] lg:items-stretch">
             <div className="overflow-hidden rounded-lg bg-white shadow-card">
               <img
-                src="/services.png"
+                src="/services.webp"
                 alt="Medical billing team reviewing revenue cycle dashboards"
                 className="h-full min-h-[28rem] w-full object-cover"
               />
@@ -268,7 +268,7 @@ const toggleService = (service: string) => {
 
           <div className="mt-8 grid overflow-hidden bg-white lg:max-h-[31rem] lg:grid-cols-[1.08fr_0.92fr]">
             <img
-              src="/onboarding.png"
+              src="/onboarding.webp"
               alt="Healthcare professional reviewing onboarding documents"
               className="h-72 w-full object-cover sm:h-96 lg:h-full lg:min-h-0 rounded-lg"
             />
@@ -347,7 +347,7 @@ const toggleService = (service: string) => {
 
             <div className="relative h-80 overflow-hidden rounded-lg sm:h-96 lg:h-auto">
               <img
-                src="/about.png"
+                src="/about.webp"
                 alt="Medymatic office reception"
                 className="absolute inset-0 h-full w-full object-cover"
               />
@@ -445,15 +445,15 @@ const toggleService = (service: string) => {
               <div className="mt-10 space-y-4 lg:mt-0">
                 <div className="flex items-center gap-3 text-sm">
                   <Mail size={18} />
-                  <span>hello@medymatic.com</span>
+                  <span>info@medymatic.com</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Phone size={18} />
-                  <span>+1 (555) 012-3456</span>
+                  <span>+1 (762) 716-5164</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
-                  <MapPin size={18} />
-                  <span>Available across the US</span>
+                  <Phone size={18} />
+                  <span>+91 79721 76347</span>
                 </div>
               </div>
             </div>

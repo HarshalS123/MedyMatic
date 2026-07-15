@@ -41,7 +41,7 @@ export function NewPracticeLaunchBlogPage() {
 
         <figure className="mt-12 overflow-hidden rounded-2xl bg-gray-100 shadow-[0_18px_45px_rgba(17,24,39,0.08)]">
           <img
-            src="/psychiatry.png"
+            src="/psychiatry.webp"
             alt="Illustration of a mobile calculator"
             fetchPriority="high"
             decoding="async"

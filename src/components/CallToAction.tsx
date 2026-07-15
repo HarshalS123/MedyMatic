@@ -25,7 +25,7 @@ export function CallToAction() {
         </div>
 
         <img
-          src="/doctor.png"
+          src="/doctor.webp"
           alt="Doctor with stethoscope"
           className="pointer-events-none relative z-20 -mb-px mx-auto mt-8 block h-[20rem] w-auto max-w-full translate-y-px object-contain sm:h-[24rem] md:absolute md:bottom-0 md:right-0 md:mb-0 md:mt-0 md:h-[26rem] md:translate-y-0 lg:right-12 lg:h-[29rem]"
         />

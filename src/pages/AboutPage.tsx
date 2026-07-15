@@ -6,7 +6,7 @@ export function AboutPage() {
     <>
       <section className="relative isolate overflow-hidden bg-gray-50 pb-16 pt-8">
         <div className="absolute inset-0 lg:hidden" aria-hidden="true">
-          <img src="/figma-image-2.png" alt="" className="h-full w-full object-cover" />
+          <img src="/career-banner.webp" alt="Medymatic team" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/55" />
         </div>
 
@@ -50,7 +50,7 @@ export function AboutPage() {
 
               <div className="absolute right-0 top-0 h-[24rem] w-[24rem] overflow-hidden rounded-full bg-white shadow-[0_30px_80px_rgba(17,24,39,0.08)] sm:h-[27rem] sm:w-[27rem] lg:h-[29rem] lg:w-[29rem]">
                 <img
-                  src="/figma-image-2.png"
+                  src="/career-banner.webp"
                   alt="Medymatic healthcare operations team"
                   className="h-full w-full object-cover"
                 />
@@ -135,7 +135,7 @@ export function AboutPage() {
 
             <div className="relative min-h-[28rem] overflow-hidden rounded-xl bg-gray-100 shadow-[0_20px_50px_rgba(17,24,39,0.08)] sm:min-h-[34rem] lg:min-h-0">
               <img
-                src="/about.png"
+                src="/about.webp"
                 alt="Medymatic reception area"
                 className="absolute inset-0 h-full w-full object-cover"
               />
@@ -171,7 +171,7 @@ export function AboutPage() {
 
             <div className="h-64 overflow-hidden rounded-2xl bg-gray-100 shadow-[0_20px_50px_rgba(17,24,39,0.08)] sm:h-72">
               <img
-                src="/mission.png"
+                src="/mission.webp"
                 alt="doctors making a circle to represent unity and collaboration"
                 className="h-full w-full object-cover"
               />
@@ -231,19 +231,19 @@ export function AboutPage() {
             {[
               {
                 title: "Excellence",
-                image: "/excellency.png",
+                image: "/excellency.webp",
                 description:
                   "We maintain the highest standards in every aspect of our service delivery, ensuring accuracy, compliance, and exceptional results for our clients.",
               },
               {
                 title: "Transparency",
-                image: "/transparency.png",
+                image: "/transparency.webp",
                 description:
                   "We believe in open communication and complete transparency in our processing, pricing, and performance metrics with all our partners.",
               },
               {
                 title: "Innovation",
-                image: "/innovation.png",
+                image: "/innovation.webp",
                 description:
                   "We continuously evolve our processes and adopt cutting-edge technologies to provide the most efficient revenue cycle management solutions.",
               },
@@ -292,7 +292,7 @@ export function AboutPage() {
               <div>
                 <div className="h-64 overflow-hidden rounded-xl border border-white/10 sm:h-72 lg:h-80">
                   <img
-                    src="/harshal.png"
+                    src="/harshal.webp"
                     alt="Medymatic CEO Harshal Sawarkar"
                     className="h-full w-full object-fill"
                   />

@@ -33,7 +33,7 @@ export function ContactPage() {
     <>
       <section className="relative isolate overflow-hidden bg-gray-50 pb-16 pt-8">
         <div className="absolute inset-0 lg:hidden" aria-hidden="true">
-          <img src="/figma-image-2.png" alt="" className="h-full w-full object-cover" />
+          <img src="/contact-banner.webp" alt="Medymatic contact team" className="h-full w-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/55" />
         </div>
 
@@ -77,7 +77,7 @@ export function ContactPage() {
 
               <div className="absolute right-0 top-0 h-[24rem] w-[24rem] overflow-hidden rounded-full bg-white shadow-[0_30px_80px_rgba(17,24,39,0.08)] sm:h-[27rem] sm:w-[27rem] lg:h-[29rem] lg:w-[29rem]">
                 <img
-                  src="/contact-banner.png"
+                  src="/contact-banner.webp"
                   alt="Medymatic support team"
                   className="h-full w-full object-cover"
                 />
@@ -149,7 +149,7 @@ export function ContactPage() {
                   USA
                 </span>
                 <span className="mt-1 block whitespace-nowrap text-sm font-black text-brand-red">
-                  +1 (847) 503-9952
+                  +1 (762) 716-5164
                 </span>
               </a>
             </div>

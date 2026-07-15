@@ -8,7 +8,7 @@ export const blogPosts = [
     title: "Telemedicine",
     excerpt:
       "Telehealth enables remote medical care through secure virtual tools, offering accessible and convenient healthcare anytime, anywhere.",
-    image: "/telemedicine.png",
+    image: "/telemedicine.webp",
   },
   {
     slug: "psychotherapy",
@@ -19,7 +19,7 @@ export const blogPosts = [
     title: "Psychotherapy",
     excerpt:
       "Psychotherapy provides a safe and confidential space for individuals to explore and understand their thoughts, emotions, and behaviours.",
-    image: "/psychotherapy.png",
+    image: "/psychotherapy.webp",
   },
   {
     slug: "new-practice-launch-first-revenue-cycle-success",
@@ -30,6 +30,6 @@ export const blogPosts = [
     title: "New Practice Launch & First Revenue Cycle Success",
     excerpt:
       "How Medymatic helped a growing psychiatry practice build its revenue cycle foundation and reach its first payment in 30 days.",
-    image: "/revenue-cycle.png",
+    image: "/revenue-cycle.webp",
   },
 ];

@@ -43,7 +43,7 @@ export function TelemedicineBlogPage() {
 
           <figure className="mt-10 overflow-hidden rounded-2xl bg-gray-100 shadow-[0_18px_45px_rgba(17,24,39,0.08)]">
             <img
-              src="/figma-image-3.png"
+              src="/telemedicine.webp"
               alt="Healthcare professional using digital revenue cycle technology"
               fetchPriority="high"
               decoding="async"
