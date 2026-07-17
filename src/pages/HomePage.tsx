@@ -266,7 +266,7 @@ const toggleService = (service: string) => {
             </p>
           </div>
 
-          <div className="mt-8 grid overflow-hidden bg-white lg:max-h-[31rem] lg:grid-cols-[1.08fr_0.92fr]">
+          <div className="mt-8 grid overflow-hidden bg-white lg:grid-cols-[1.08fr_0.92fr]">
             <img
               src="/onboarding.webp"
               alt="Healthcare professional reviewing onboarding documents"
@@ -449,7 +449,7 @@ const toggleService = (service: string) => {
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Phone size={18} />
-                  <span>+1 (762) 716-5164</span>
+                  <span>+1 (847) 503-9952</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm">
                   <Phone size={18} />

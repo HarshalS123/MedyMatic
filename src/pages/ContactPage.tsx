@@ -149,7 +149,7 @@ export function ContactPage() {
                   USA
                 </span>
                 <span className="mt-1 block whitespace-nowrap text-sm font-black text-brand-red">
-                  +1 (762) 716-5164
+                  +1 (847) 503-9952
                 </span>
               </a>
             </div>

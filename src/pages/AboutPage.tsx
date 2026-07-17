@@ -164,7 +164,9 @@ export function AboutPage() {
                 <p>
                   Our goal is to change that by offering reliable, end-to-end RCM solutions that
                   deliver exceptional results without straining your budget. We aim to support new
-                  and growing practices by taking complete ownership of their RCM processes.
+                  and growing practices by taking complete ownership of their RCM processes. Allowing providers to stay
+                  focused on what truly matters—delivering outstanding patient care, building trust, and growing
+                  a strong patient base with confidence.
                 </p>
               </div>
             </div>
@@ -194,7 +196,7 @@ export function AboutPage() {
                 healthcare facilities of all sizes. By offering budget-friendly solutions, we
                 enable our clients to outsource their billing operations with confidence and
                 ease—allowing them to focus on what truly matters: delivering outstanding patient
-                care and building strong patient relationships.
+                care.
               </p>
             </article>
 
@@ -214,7 +216,8 @@ export function AboutPage() {
                 remove the burden of complex, costly RCM processes so providers can focus entirely
                 on patient care and practice growth. By offering efficient, transparent, and
                 affordable solutions, we aim to support both new and established providers in
-                building sustainable, thriving practices.
+                building sustainable, thriving practices while ensuring
+they never have to compromise between quality service and financial stability.
               </p>
             </article>
           </div>

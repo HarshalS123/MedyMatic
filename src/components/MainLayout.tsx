@@ -14,6 +14,34 @@ export function MainLayout() {
       <Seo />
       <HashScroll />
       <header className="sticky top-0 z-50 border-b border-brand-line bg-white/95 backdrop-blur">
+        <div className="bg-brand-red text-white">
+          <div className="container-page flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 py-2 text-[11px] font-semibold sm:justify-end sm:text-xs">
+            <a
+              href="tel:+917972176347"
+              className="focus-ring inline-flex items-center gap-1.5 rounded-sm transition hover:text-white/80"
+              aria-label="Call Medymatic India at +91 79721 76347"
+            >
+              <Phone size={13} aria-hidden="true" />
+              +91 79721 76347
+            </a>
+            <a
+              href="tel:+18475039952"
+              className="focus-ring inline-flex items-center gap-1.5 rounded-sm transition hover:text-white/80"
+              aria-label="Call Medymatic USA at +1 (847) 503-9952"
+            >
+              <Phone size={13} aria-hidden="true" />
+              +1 (847) 503-9952
+            </a>
+            <a
+              href="mailto:info@medymatic.com"
+              className="focus-ring inline-flex items-center gap-1.5 rounded-sm transition hover:text-white/80"
+            >
+              <Mail size={13} aria-hidden="true" />
+              info@medymatic.com
+            </a>
+          </div>
+        </div>
+
         <div className="container-page flex h-20 items-center justify-between gap-4">
           <Link to="/" className="focus-ring flex items-center gap-3 rounded-md">
             <img src="/MedymaticLogo.svg" alt="Medymatic logo" />
@@ -116,10 +144,10 @@ export function MainLayout() {
                     +91 79721 76347
                   </p>
                 </a>
-                <a href="tel:+17627165164" target="_blank" rel="noopener noreferrer" className="break-all sm:break-normal flex items-center gap-2">
+                <a href="tel:+18475039952" target="_blank" rel="noopener noreferrer" className="break-all sm:break-normal flex items-center gap-2">
                   <Phone size={16} className="inline-block" />
                   <p className="hover:text-brand-red">
-                    +1 76271 65164
+                    +1 (847) 503-9952
                   </p>
                 </a>
                 <a href="https://maps.app.goo.gl/pB9zezepqB3azvuH6" target="_blank" rel="noopener noreferrer" className="break-all sm:break-normal flex items-center gap-2">

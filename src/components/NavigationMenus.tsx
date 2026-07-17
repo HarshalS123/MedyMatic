@@ -68,7 +68,7 @@ const navigationMenus: NavigationMenu[] = [
             icon: BadgeCheck,
           },
           {
-            label: "Eligibility Verification",
+            label: "Eligibility & Benefit Verification",
             description: "Verify coverage before care.",
             href: "/services#eligibility-verification",
             icon: BadgeDollarSign,
@@ -80,7 +80,7 @@ const navigationMenus: NavigationMenu[] = [
             icon: HandCoins,
           },
           {
-            label: "Patient Scheduling",
+            label: "Patient Scheduling Services",
             description: "Simplify appointment coordination.",
             href: "/services#patient-scheduling",
             icon: CalendarClock,
