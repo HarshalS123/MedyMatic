@@ -131,21 +131,21 @@ function ServiceSlide({ item, reverse }: { item: ServiceItem; reverse: boolean }
   return (
     <li
       id={item.id}
-      className="sticky top-0 z-10 flex h-screen w-full scroll-mt-20 items-center bg-white"
+      className="relative z-10 w-full scroll-mt-36 border-b border-brand-line bg-white py-10 last:border-b-0 sm:py-14 lg:sticky lg:top-28 lg:flex lg:h-[calc(100vh-7rem)] lg:scroll-mt-28 lg:items-center lg:border-b-0 lg:py-0"
     >
       <div className="container-page">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <div className={reverse ? "lg:order-2" : ""}>
+          <div className={`min-w-0 ${reverse ? "lg:order-2" : ""}`}>
             <div className="overflow-hidden rounded-2xl bg-gray-100 shadow-[0_20px_50px_rgba(17,24,39,0.08)]">
               <img
                 src={item.image}
                 alt={item.title}
-                className="h-64 w-full object-cover sm:h-80 lg:h-[28rem]"
+                className="h-52 w-full object-cover sm:h-72 lg:h-[min(28rem,60vh)]"
               />
             </div>
           </div>
 
-          <div className={reverse ? "lg:order-1" : ""}>
+          <div className={`min-w-0 ${reverse ? "lg:order-1" : ""}`}>
             <p className="text-xs font-black tracking-wider text-brand-red">{item.index}</p>
             <h3 className="mt-3 max-w-md text-2xl font-black leading-snug text-black sm:text-3xl">
               {item.title}
@@ -228,10 +228,7 @@ function ServicesOverview() {
         </div>
       </div>
 
-      <ul
-        className="m-0 mt-12 grid list-none grid-cols-1 gap-0 p-0"
-        style={{ gridTemplateRows: `repeat(${activeServices.length}, 100vh)` }}
-      >
+      <ul className="m-0 mt-6 list-none p-0 md:mt-12">
         {activeServices.map((item, index) => (
           <ServiceSlide key={item.title} item={item} reverse={index % 2 === 1} />
         ))}
