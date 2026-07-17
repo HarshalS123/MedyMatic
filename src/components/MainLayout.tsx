@@ -5,6 +5,7 @@ import { ButtonLink } from "./ButtonLink";
 import { HashScroll } from "./HashScroll";
 import { DesktopNavigation, MobileNavigation } from "./NavigationMenus";
 import { Seo } from "./Seo";
+import { ScrollReveal } from "./ScrollReveal";
 
 export function MainLayout() {
   const [open, setOpen] = useState(false);
@@ -13,6 +14,7 @@ export function MainLayout() {
     <div className="min-h-screen bg-white text-brand-ink">
       <Seo />
       <HashScroll />
+      <ScrollReveal />
       <header className="sticky top-0 z-50 border-b border-brand-line bg-white/95 backdrop-blur">
         <div className="bg-brand-red text-white">
           <div className="container-page flex flex-wrap gap-x-5 gap-y-1.5 py-2 text-[11px] font-semibold sm:justify-end sm:text-xs">
