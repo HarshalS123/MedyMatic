@@ -15,7 +15,7 @@ export function MainLayout() {
       <HashScroll />
       <header className="sticky top-0 z-50 border-b border-brand-line bg-white/95 backdrop-blur">
         <div className="bg-brand-red text-white">
-          <div className="container-page flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 py-2 text-[11px] font-semibold sm:justify-end sm:text-xs">
+          <div className="container-page flex flex-wrap gap-x-5 gap-y-1.5 py-2 text-[11px] font-semibold sm:justify-end sm:text-xs">
             <a
               href="tel:+917972176347"
               className="focus-ring inline-flex items-center gap-1.5 rounded-sm transition hover:text-white/80"
@@ -43,9 +43,15 @@ export function MainLayout() {
         </div>
 
         <div className="container-page flex h-20 items-center justify-between gap-4">
-          <Link to="/" className="focus-ring flex items-center gap-3 rounded-md">
-            <img src="/MedymaticLogo.svg" alt="Medymatic logo" />
-
+          <Link
+            to="/"
+            className="focus-ring relative h-12 w-44 shrink-0 overflow-hidden rounded-md sm:h-14 sm:w-52 lg:h-12 lg:w-44 xl:h-14 xl:w-52"
+          >
+            <img
+              src="/logo.webp"
+              alt="Medymatic logo"
+              className="absolute left-1/2 top-1/2 w-[115%] max-w-none -translate-x-1/2 -translate-y-1/2"
+            />
           </Link>
 
           <DesktopNavigation />
@@ -102,11 +108,14 @@ export function MainLayout() {
       <footer className="relative overflow-hidden border-t border-brand-line bg-white text-brand-ink">
         <div className="container-page">
           <div className="relative z-10 grid grid-cols-2 gap-x-6 gap-y-9 py-10 sm:gap-x-10 sm:py-12 lg:grid-cols-[1.7fr_0.7fr_0.7fr_1fr] lg:gap-14">
-            <Link to="/" className="focus-ring col-span-2 inline-flex w-fit rounded-md lg:col-span-1">
+            <Link
+              to="/"
+              className="focus-ring relative col-span-2 h-16 w-52 max-w-full overflow-hidden rounded-md sm:h-20 sm:w-64 lg:col-span-1"
+            >
               <img
-                src="/MedymaticLogo.svg"
+                src="/logo.webp"
                 alt="Medymatic logo"
-                className="h-12 w-auto sm:h-14 lg:h-16"
+                className="absolute left-1/2 top-1/2 w-[115%] max-w-none -translate-x-1/2 -translate-y-1/2"
               />
             </Link>
 
