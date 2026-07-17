@@ -25,7 +25,8 @@ type ServiceItem = {
   id: string;
   index: string;
   title: string;
-  description: string;
+  description1: string;
+  description2?: string;
   image: string;
 };
 
@@ -34,56 +35,63 @@ const providerServices: ServiceItem[] = [
     id: "revenue-cycle-consultation",
     index: "01/07",
     title: "RCM Consultation",
-    description:
-      "We assess your existing revenue cycle workflows and identify gaps in claims processing, denial management, and collections, then build a tailored roadmap for improvement.",
+    description1:
+      "We offer a complimentary, no-obligation RCM consultation to help providers gain clarity on their current billing and revenue cycle processes. During this session, our experts assess existing workflows, identify revenue gaps, inefficiencies, and compliance risks, and provide actionable insights on how to optimize performance. ",
+    description2: "Our goal is to empower providers with a clear roadmap to improve cash flow, reduce losses, and streamline operations—completely free of cost, with no commitment required.",
     image: "/rcm-consultation.webp",
   },
   {
     id: "ar-denial-management",
     index: "02/07",
     title: "Accounts Receivable (AR) & Denial Management",
-    description:
-      "Our team works aged AR and denied claims systematically, reducing days in AR and recovering revenue that would otherwise be written off.",
+    description1:
+      "Accounts Receivable (AR) represents the revenue your practice is yet to collect for services already provided—and managing it effectively is key to maintaining a healthy cash flow. Our dedicated team takes complete ownership of your AR by proactively tracking outstanding claims, performing timely follow-ups with payers, and resolving payment delays with precision. We also specialize in Denial Management, where we identify the root causes of denials, correct errors, and ensure quick resubmissions to maximize reimbursements. ",
+    description2: "By reducing aging receivables and minimizing revenue leakage, we help your practice get paid faster and more consistently—so you can focus on delivering exceptional patient care while we safeguard your revenue.",
     image: "/ar-denial.webp",
   },
   {
     id: "medical-coding",
     index: "03/07",
     title: "Medical Coding",
-    description:
-      "Certified coders assign accurate CPT, ICD-10, and HCPCS codes across specialties, minimizing claim rejections and supporting compliant reimbursement.",
+    description1:
+      "Accurate medical coding is the foundation of a successful revenue cycle, and our expert coders ensure your claims are processed right the first time. Our team of certified professionals translates clinical documentation into precise, compliant codes aligned with the latest industry guidelines. ",
+    description2: "By minimizing errors and maintaining coding accuracy, we help reduce denials, speed up claim approvals, and maximize reimbursements. With our strong focus on quality and compliance, your practice can achieve smoother billing operations while avoiding costly delays and rework.",
     image: "/medical-coding.webp",
   },
   {
     id: "eligibility-verification",
     index: "04/07",
     title: "Eligibility & Benefits Verification",
-    description:
-      "We verify patient coverage and benefits ahead of visits, reducing front-end denials and giving your team accurate information before service is rendered.",
+    description1:
+      "Accurate eligibility and benefits verification is the first step toward a seamless revenue cycle. Our dedicated team ensures every patient's coverage is verified with precision before services are rendered, eliminating guesswork and reducing the risk of claim denials. Using a combination of industry expertise and efficient processes, we confirm coverage details, benefits, co-pays, deductibles, and authorization requirements tailored to your practice. ",
+    description2: "By ensuring complete and accurate information upfront, we help streamline your billing workflow, minimize errors, and maximize reimbursements—giving your team the confidence to focus on delivering exceptional patient care.",
     image: "/eligibility-and-benefits.webp",
   },
   {
     id: "payment-posting",
     index: "05/07",
     title: "Payment Posting",
-    description:
-      "Accurate, timely posting of payer and patient payments keeps your financial records reconciled and gives you a clear view of true outstanding balances.",
+    description1:
+      "Payment posting is a critical step in maintaining a clear and accurate picture of your practice’s financial health. Our Payment Posting services are designed to ensure every payment—whether from insurance providers, patients, or other sources is recorded with precision and timeliness. Our dedicated team carefully reconciles payments, identifies discrepancies, and updates accounts with complete accuracy, providing full transparency into your revenue flow. ",
+    description2: "By maintaining clean and up-to-date financial records, we help reduce errors, accelerate reporting, and support better decision-making—ensuring your revenue cycle runs smoothly and efficiently.",
     image: "/payment-posting.webp",
   },
   {
     id: "patient-scheduling",
     index: "06/07",
     title: "Patient Scheduling Services",
-    description:
-      "Our scheduling support reduces no-shows and gaps in your calendar, keeping patient flow steady and provider time fully utilized.",
+    description1:
+      "Our Patient Scheduling services are designed to create a seamless and professional experience for every caller. We handle inbound calls from patients, referral hospitals, insurance representatives, and other stakeholders with promptness, accuracy, and care. Our trained coordinators ensure appointments are scheduled efficiently while addressing inquiries with clarity and professionalism. ",
+    description2: "By prioritizing timely responses and high-quality interactions, we help enhance patient satisfaction, reduce missed appointments, and build a strong sense of trust in your organization. Acting as an extension of your front desk, we ensure every interaction reflects your commitment to excellent care and professionalism.",
     image: "/patient-scheduling-services.webp",
   },
   {
     id: "credentialing-services",
     index: "07/07",
     title: "Credentialing Services",
-    description:
-      "We manage payer enrollment and credentialing end to end, so providers can bill and get reimbursed without administrative delays.",
+    description1:
+      "Our Credentialing Services are designed to ensure your providers are fully enrolled, compliant, and ready to deliver care without delays. We support initial credentialing from start to finish, as well as seamlessly take over and complete applications that are already in progress. Our team manages the entire process with accuracy and efficiency, including ongoing maintenance of key provider profiles such as CAQH, PECOS, and Availity Provider Data.",
+    description2: "We ensure that all provider information remains up-to-date, validated, and aligned with payer requirements to avoid disruptions in billing and reimbursements. By handling complex credentialing workflows and continuous profile management, we help your practice stay compliant, reduce administrative burden, and accelerate revenue generation—allowing you to focus entirely on patient care.",
     image: "/credentialing-services.webp",
   },
 ];
@@ -93,24 +101,28 @@ const payerServices: ServiceItem[] = [
     id: "payer-call-center",
     index: "01/03",
     title: "Payer Call Center",
-    description:
-      "Dedicated call center support for provider and member questions, benefits guidance, and timely issue resolution.",
+    description1:
+      "Our Payer Call Centre service is designed to seamlessly manage high volumes of inbound calls from providers and members with efficiency and precision. We handle a wide range of inquiries, including eligibility verification, claim status updates, benefit clarifications, and issue resolution. Our trained representatives ensure clear communication, accurate information, and timely responses, enhancing the overall caller experience.",
+    description2: "By serving as a reliable extension of your operations, we help reduce internal workload, improve response times, and maintain consistent service quality across all payer interactions.",
     image: "/payer-call-center.webp",
   },
   {
     id: "rejection-management",
     index: "02/03",
     title: "Rejection Management",
-    description:
-      "Structured rejection workflows that improve claims accuracy, resolve processing issues, and reduce avoidable rework.",
+    description1:
+      "Our Rejection Management service is designed to support insurance payers in maintaining accuracy, compliance, and consistency in claims processing. We assist in reviewing and validating claims to ensure that rejections are issued correctly in accordance with payer policies and regulatory guidelines.",
+    description2:
+      "By implementing structured verification processes and thorough quality checks, we help minimize incorrect denials, reduce disputes, and improve overall adjudication efficiency. Our approach ensures that only appropriate rejections are communicated, strengthening provider trust while optimizing operational performance.",
     image: "/rejection-management.webp",
   },
   {
     id: "chat-support-services",
     index: "03/03",
     title: "Chat Support Services",
-    description:
-      "Responsive chat assistance for provider and member inquiries, helping payers deliver clear support in real time.",
+    description1:
+      "Our Chat Support Services are designed to provide real-time, efficient assistance to providers and members through seamless digital interactions. Our trained representatives handle live chat queries from provider executives, addressing concerns related to eligibility, claims status, benefits, and issue resolution directly within the chat platform.",
+    description2: "By delivering accurate and prompt responses, we help resolve issues instantly without the need for follow-up calls. This service enhances user experience, reduces call volumes, and ensures consistent, high-quality support while acting as a reliable extension of your customer service operations.",
     image: "/chat-support.webp",
   },
 ];
@@ -139,8 +151,13 @@ function ServiceSlide({ item, reverse }: { item: ServiceItem; reverse: boolean }
               {item.title}
             </h3>
             <p className="mt-4 max-w-md text-sm leading-6 text-brand-muted">
-              {item.description}
+              {item.description1}
             </p>
+            {item.description2 && (
+              <p className="mt-4 max-w-md text-sm leading-6 text-brand-muted">
+                {item.description2}
+              </p>
+            )}
             <Link
               to="/contact"
               className="mt-5 inline-flex items-center gap-2 text-sm font-black text-brand-red transition hover:gap-3"
@@ -191,22 +208,20 @@ function ServicesOverview() {
           <button
             type="button"
             onClick={() => setActiveTab("providers")}
-            className={`rounded-full px-6 py-2.5 text-sm font-bold transition ${
-              activeTab === "providers"
-                ? "bg-brand-red text-white"
-                : "bg-gray-100 text-brand-ink hover:bg-gray-200"
-            }`}
+            className={`rounded-full px-6 py-2.5 text-sm font-bold transition ${activeTab === "providers"
+              ? "bg-brand-red text-white"
+              : "bg-gray-100 text-brand-ink hover:bg-gray-200"
+              }`}
           >
             For Providers
           </button>
           <button
             type="button"
             onClick={() => setActiveTab("payers")}
-            className={`rounded-full px-6 py-2.5 text-sm font-bold transition ${
-              activeTab === "payers"
-                ? "bg-brand-red text-white"
-                : "bg-gray-100 text-brand-ink hover:bg-gray-200"
-            }`}
+            className={`rounded-full px-6 py-2.5 text-sm font-bold transition ${activeTab === "payers"
+              ? "bg-brand-red text-white"
+              : "bg-gray-100 text-brand-ink hover:bg-gray-200"
+              }`}
           >
             For Payers
           </button>
