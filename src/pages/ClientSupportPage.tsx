@@ -1,10 +1,12 @@
-import { ChevronRight, Clock3, Headphones, Heart, ShieldCheck, UploadCloud } from "lucide-react";
+import { useState } from "react";
+import { ChevronRight, Clock3, FileCheck2, Headphones, Heart, ShieldCheck, UploadCloud } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SubmissionStatus } from "../components/SubmissionStatus";
 import { useApiForm } from "../hooks/useApiForm";
 
 export function ClientSupportPage() {
   const { handleSubmit, submission, isSubmitting } = useApiForm("support", { multipart: true });
+  const [fileName, setFileName] = useState<string | null>(null);
 
   return (
     <>
@@ -171,18 +173,26 @@ export function ClientSupportPage() {
               </label>
               <label
                 htmlFor="document"
-                className="mt-2.5 flex min-h-24 cursor-pointer items-center justify-between gap-5 rounded-xl border border-dashed border-gray-300 bg-gray-50 px-5 py-4 transition hover:border-brand-red hover:bg-red-50/40 focus-within:ring-2 focus-within:ring-brand-red focus-within:ring-offset-2"
+                className={`mt-2.5 flex min-h-24 cursor-pointer items-center justify-between gap-5 rounded-xl border px-5 py-4 transition focus-within:ring-2 focus-within:ring-brand-red focus-within:ring-offset-2 ${
+                  fileName
+                    ? "border-brand-red bg-red-50/40"
+                    : "border-dashed border-gray-300 bg-gray-50 hover:border-brand-red hover:bg-red-50/40"
+                }`}
               >
-                <span>
-                  <span className="block text-sm font-bold text-brand-ink">
-                    Choose a file or drag it here
+                <span className="min-w-0">
+                  <span className="block truncate text-sm font-bold text-brand-ink">
+                    {fileName ?? "Choose a file or drag it here"}
                   </span>
                   <span className="mt-1 block text-xs text-brand-muted">
-                    PDF, DOC, DOCX, JPG or PNG · Maximum 10MB
+                    {fileName ? "File selected · click to change" : "PDF, DOC, DOCX, JPG or PNG · Maximum 10MB"}
                   </span>
                 </span>
-                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white text-brand-red shadow-sm">
-                  <UploadCloud size={22} />
+                <span
+                  className={`grid h-11 w-11 shrink-0 place-items-center rounded-xl shadow-sm ${
+                    fileName ? "bg-brand-red text-white" : "bg-white text-brand-red"
+                  }`}
+                >
+                  {fileName ? <FileCheck2 size={22} /> : <UploadCloud size={22} />}
                 </span>
                 <input
                   id="document"
@@ -191,6 +201,7 @@ export function ClientSupportPage() {
                   required
                   accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
                   className="sr-only"
+                  onChange={(event) => setFileName(event.target.files?.[0]?.name ?? null)}
                 />
               </label>
             </div>
