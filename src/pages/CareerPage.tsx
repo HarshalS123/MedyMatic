@@ -1,7 +1,11 @@
-import { CheckCircle2, ChevronRight, Heart, Sparkles, Users } from "lucide-react";
+import { CheckCircle2, ChevronRight, FileUp, Heart, Sparkles, Users } from "lucide-react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { ResumeModal } from "../components/ResumeModal";
 
 export function CareerPage() {
+  const [resumeModalOpen, setResumeModalOpen] = useState(false);
+
   return (
     <>
       <section className="relative isolate overflow-hidden bg-gray-50 pb-16 pt-8">
@@ -29,12 +33,14 @@ export function CareerPage() {
               Join a team that is passionate about improving healthcare and driving meaningful
               change through innovation and teamwork.
             </p>
-            <a
-              href="#open-positions"
-              className="focus-ring mt-7 inline-flex min-h-12 w-fit items-center justify-center rounded-3xl border border-brand-red bg-white px-8 text-base font-black text-brand-red transition hover:bg-brand-red hover:text-white"
+            <button
+              type="button"
+              onClick={() => setResumeModalOpen(true)}
+              className="focus-ring mt-7 inline-flex min-h-12 w-fit items-center justify-center gap-2 rounded-3xl border border-brand-red bg-white px-8 text-base font-black text-brand-red transition hover:bg-brand-red hover:text-white"
             >
-              View Open Positions
-            </a>
+              <FileUp size={18} />
+              Submit Your Resume
+            </button>
           </div>
 
           <div className="relative hidden min-h-[26rem] sm:min-h-[28rem] lg:block">
@@ -234,7 +240,7 @@ export function CareerPage() {
               {
                 number: "01",
                 title: "Apply Online",
-                text: "Submit your resume and cover letter through our careers portal.",
+                text: "Submit your resume through our careers portal.",
               },
               {
                 number: "02",
@@ -265,6 +271,8 @@ export function CareerPage() {
           </ol>
         </div>
       </section>
+
+      <ResumeModal open={resumeModalOpen} onClose={() => setResumeModalOpen(false)} />
     </>
   );
 }

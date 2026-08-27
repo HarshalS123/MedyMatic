@@ -9,8 +9,8 @@ export function NewPracticeLaunchBlogPage() {
       <article className="bg-white pb-20 pt-8 sm:pb-24">
       <div className="container-page max-w-5xl">
         <nav className="flex flex-wrap items-center gap-2 text-sm font-bold" aria-label="Breadcrumb">
-          <Link to="/blog" className="text-brand-muted transition hover:text-brand-red">
-            Blog
+          <Link to="/about#case-studies" className="text-brand-muted transition hover:text-brand-red">
+            Case Studies
           </Link>
           <ChevronRight size={15} className="text-gray-300" />
           <span className="text-brand-red">New Practice Launch &amp; First Revenue Cycle Success</span>

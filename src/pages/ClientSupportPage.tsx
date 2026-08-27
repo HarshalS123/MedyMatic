@@ -37,12 +37,12 @@ export function ClientSupportPage() {
               Our dedicated support team is committed to providing timely assistance, answering
               your questions, and ensuring a seamless experience at every step.
             </p>
-            <Link
-              to="/contact"
+            <a
+              href="#support-form"
               className="focus-ring mt-7 inline-flex min-h-12 w-56 items-center justify-center rounded-3xl bg-brand-red px-8 text-base font-black text-white transition hover:bg-red-700"
             >
               Get in Touch
-            </Link>
+            </a>
           </div>
 
           <div className="relative hidden min-h-[26rem] sm:min-h-[28rem] lg:block">
@@ -100,7 +100,7 @@ export function ClientSupportPage() {
         </div>
       </section>
 
-      <section className="section-y">
+      <section id="support-form" className="section-y scroll-mt-24">
         <div className="container-page max-w-5xl">
           <div className="max-w-2xl">
             <p className="eyebrow">Client assistance</p>

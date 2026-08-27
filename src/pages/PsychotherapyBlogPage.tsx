@@ -30,7 +30,8 @@ export function PsychotherapyBlogPage() {
                 <UserRound size={17} />
               </span>
               <span>
-                <span className="block font-black text-brand-ink">Medymatic Team</span>
+                <span className="block font-black text-brand-ink">Riya Singh</span>
+                <span className="block text-xs font-bold text-brand-red">RCM Strategist</span>
                 <time dateTime="2026-03-08" className="text-xs">
                   Mar 8, 2026
                 </time>
@@ -64,7 +65,6 @@ export function PsychotherapyBlogPage() {
             { id: "psychotherapy-cpt-codes", label: "Psychotherapy CPT codes" },
             { id: "psychotic-problems", label: "Common conditions" },
             { id: "disallowed-claims", label: "Why claims are disallowed" },
-            { id: "psychotherapy-billing-steps-summary", label: "Billing steps summary" },
           ]}
         />
 
@@ -359,32 +359,6 @@ export function PsychotherapyBlogPage() {
               </article>
             ))}
           </div>
-        </section>
-
-        <section className="mt-16" aria-labelledby="psychotherapy-billing-steps-summary">
-          <h2
-            id="psychotherapy-billing-steps-summary"
-            className="border-l-2 border-brand-red pl-4 text-2xl font-black leading-tight text-brand-ink sm:text-3xl"
-          >
-            Important Steps While Billing for Psychotherapy Sessions
-          </h2>
-
-          <ol className="mt-8 space-y-5 text-sm leading-7 text-brand-muted sm:text-base">
-            {[
-              ["Step 1", "Proper and Timely Documentation."],
-              ["Step 2", "Billing within a Set Time Frame to Avoid Delays in Payments."],
-              ["Step 3", "Specifying the Use of CPT Codes for Different Therapist Specialties."],
-              ["Step 4", "Use of Modifiers."],
-              [
-                "Step 6",
-                "Educating Providers and the Coding Team to Stay Updated with State and Federal Requirements for Psychotherapy.",
-              ],
-            ].map(([step, text]) => (
-              <li key={step}>
-                <span className="font-black text-brand-red">{step}:</span> {text}
-              </li>
-            ))}
-          </ol>
         </section>
 
         <aside className="relative mt-16 overflow-hidden rounded-2xl border border-brand-line bg-white p-7 shadow-[0_12px_32px_rgba(17,24,39,0.05)] sm:p-9">

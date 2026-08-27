@@ -30,7 +30,8 @@ export function TelemedicineBlogPage() {
                   <UserRound size={17} />
                 </span>
                 <span>
-                  <span className="block font-black text-brand-ink">Medymatic Team</span>
+                  <span className="block font-black text-brand-ink">Harshal Sawarkar</span>
+                  <span className="block text-xs font-bold text-brand-red">CEO</span>
                   <time dateTime="2026-03-12" className="text-xs">
                     Mar 12, 2026
                   </time>

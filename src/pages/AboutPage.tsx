@@ -1,5 +1,6 @@
-import { BarChart3, ChevronRight, Eye, Quote, Rocket, ShieldCheck, Target, Users } from "lucide-react";
+import { ArrowRight, BarChart3, ChevronRight, Eye, Quote, Rocket, ShieldCheck, Target, Users } from "lucide-react";
 import { Link } from "react-router-dom";
+import { caseStudies } from "../data/site";
 
 export function AboutPage() {
   return (
@@ -332,6 +333,37 @@ they never have to compromise between quality service and financial stability.
               Real results from healthcare providers we&apos;ve partnered with to optimize their
               revenue cycle operations and drive measurable growth.
             </p>
+          </div>
+
+          <div className="mt-8 grid gap-5">
+            {caseStudies.map((study) => (
+              <Link
+                key={study.slug}
+                to={`/blog/${study.slug}`}
+                className="focus-ring group flex flex-col gap-5 overflow-hidden rounded-2xl border border-brand-line bg-white p-6 shadow-[0_10px_30px_rgba(17,24,39,0.04)] transition hover:border-brand-red hover:shadow-card sm:flex-row sm:items-center sm:p-7"
+              >
+                <div className="h-40 w-full shrink-0 overflow-hidden rounded-xl bg-gray-100 sm:h-28 sm:w-44">
+                  <img
+                    src={study.image}
+                    alt={study.title}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <span className="text-xs font-black uppercase tracking-[0.12em] text-brand-red">
+                    {study.category}
+                  </span>
+                  <h3 className="mt-2 text-xl font-black leading-snug text-brand-ink group-hover:text-brand-red">
+                    {study.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-brand-muted">{study.excerpt}</p>
+                </div>
+                <span className="flex shrink-0 items-center gap-1.5 text-sm font-black text-brand-red">
+                  Read case study
+                  <ArrowRight aria-hidden="true" size={17} className="transition group-hover:translate-x-1" />
+                </span>
+              </Link>
+            ))}
           </div>
 
           <div className="mt-10 grid gap-6 lg:grid-cols-2">

@@ -21,6 +21,9 @@ export const blogPosts = [
       "Psychotherapy provides a safe and confidential space for individuals to explore and understand their thoughts, emotions, and behaviours.",
     image: "/psychotherapy.webp",
   },
+];
+
+export const caseStudies = [
   {
     slug: "new-practice-launch-first-revenue-cycle-success",
     category: "Case Study",

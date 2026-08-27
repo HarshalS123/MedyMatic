@@ -10,7 +10,6 @@ const contactServices = [
   "Rejection Management",
   "Chat Support",
   "Call Centre",
-  "HR Management",
   "Eligibility & Benefits Verification",
   "Others",
 ];
@@ -56,12 +55,6 @@ export function ContactPage() {
                 Have questions or need assistance? Our team is here to help you streamline
                 operations and achieve your goals.
               </p>
-              <a
-                href="#contact-form"
-                className="focus-ring mt-7 inline-flex min-h-12 w-56 items-center justify-center rounded-3xl bg-brand-red px-8 text-base font-black text-white transition hover:bg-red-700"
-              >
-                Contact Us
-              </a>
             </div>
 
             <div className="relative hidden min-h-[26rem] sm:min-h-[28rem] lg:block">
@@ -281,6 +274,21 @@ export function ContactPage() {
               </div>
               <input type="hidden" name="services" value={selectedServices.join(", ")} />
             </fieldset>
+
+            {selectedServices.includes("Others") && (
+              <label htmlFor="comment" className="mt-6 block">
+                <span className="text-sm font-bold text-brand-ink">
+                  Comment / Short Note <span className="text-brand-red">*</span>
+                </span>
+                <textarea
+                  id="comment"
+                  name="comment"
+                  required
+                  placeholder="Briefly describe your requirement or inquiry..."
+                  className="focus-ring mt-2.5 min-h-32 w-full resize-y rounded-xl border border-brand-line bg-gray-50 px-5 py-4 text-base text-brand-ink placeholder:text-gray-400"
+                />
+              </label>
+            )}
 
             <button
               type="submit"

@@ -14,6 +14,10 @@ export type SeoRoute = {
   publishedTime?: string;
   modifiedTime?: string;
   author?: string;
+  authorType?: "Person" | "Organization";
+  authorTitle?: string;
+  breadcrumbLabel?: string;
+  breadcrumbPath?: string;
   category?: string;
   schemaHeadline?: string;
   schemaImage?: string;
@@ -139,7 +143,9 @@ export const seoRoutes: SeoRoute[] = [
     index: true,
     type: "article",
     publishedTime: "2026-03-12",
-    author: "Medymatic Team",
+    author: "Harshal Sawarkar",
+    authorType: "Person",
+    authorTitle: "CEO",
     category: "Healthcare Tech",
     schemaHeadline: "Telemedicine",
     schemaImage: "/telemedicine.webp",
@@ -154,7 +160,9 @@ export const seoRoutes: SeoRoute[] = [
     index: true,
     type: "article",
     publishedTime: "2026-03-08",
-    author: "Medymatic Team",
+    author: "Riya Singh",
+    authorType: "Person",
+    authorTitle: "RCM Strategist",
     category: "Wellness",
     schemaHeadline: "Psychotherapy",
     schemaImage: "/psychotherapy.webp",
@@ -170,6 +178,8 @@ export const seoRoutes: SeoRoute[] = [
     type: "article",
     publishedTime: "2025-06-01",
     author: "Medymatic Team",
+    breadcrumbLabel: "Case Studies",
+    breadcrumbPath: "/about#case-studies",
     category: "Case Study",
     schemaHeadline: "From Zero to First Payment in 30 Days – A New Psychiatry Practice's Journey",
     schemaImage: "/revenue-cycle.webp",

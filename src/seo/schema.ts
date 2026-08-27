@@ -35,8 +35,8 @@ function breadcrumbSchema(route: SeoRoute, config: SiteConfig): JsonLd {
           {
             "@type": "ListItem",
             position: 2,
-            name: "Blog",
-            item: absoluteUrl("/blog", config),
+            name: route.breadcrumbLabel ?? "Blog",
+            item: absoluteUrl(route.breadcrumbPath ?? "/blog", config),
           },
         ]
       : []),
@@ -94,9 +94,11 @@ export function getStructuredData(
             datePublished: route.publishedTime,
             ...(route.modifiedTime ? { dateModified: route.modifiedTime } : {}),
             author: {
-              "@type": "Organization",
+              "@type": route.authorType ?? "Organization",
               name: route.author ?? config.organization.name,
-              url: config.baseUrl,
+              ...(route.authorType === "Person"
+                ? { ...(route.authorTitle ? { jobTitle: route.authorTitle } : {}) }
+                : { url: config.baseUrl }),
             },
             publisher: { "@id": absoluteUrl("/#organization", config) },
             mainEntityOfPage: absoluteUrl(route.path, config),

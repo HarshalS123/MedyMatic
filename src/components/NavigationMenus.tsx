@@ -239,21 +239,36 @@ function DesktopDropdown({ menu }: { menu: NavigationMenu }) {
         }
       }}
     >
-      <button
-        type="button"
-        aria-expanded={open}
-        aria-haspopup="true"
-        onClick={() => setOpen((value) => !value)}
-        className={`focus-ring inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-bold transition ${
-          active ? "text-brand-red" : "text-brand-ink hover:text-brand-red"
+      <div
+        className={`inline-flex items-center rounded-md text-sm font-bold transition ${
+          active ? "text-brand-red" : "text-brand-ink"
         }`}
       >
-        {menu.label}
-        <ChevronDown
-          size={15}
-          className={`transition-transform ${open ? "rotate-180" : ""}`}
-        />
-      </button>
+        <Link
+          to={menu.href}
+          onClick={() => setOpen(false)}
+          className={`focus-ring rounded-md py-2 pl-3 transition hover:text-brand-red ${
+            active ? "text-brand-red" : "text-brand-ink"
+          }`}
+        >
+          {menu.label}
+        </Link>
+        <button
+          type="button"
+          aria-expanded={open}
+          aria-haspopup="true"
+          aria-label={`${open ? "Close" : "Open"} ${menu.label} menu`}
+          onClick={() => setOpen((value) => !value)}
+          className={`focus-ring rounded-md py-2 pl-1 pr-3 transition hover:text-brand-red ${
+            active ? "text-brand-red" : "text-brand-ink"
+          }`}
+        >
+          <ChevronDown
+            size={15}
+            className={`transition-transform ${open ? "rotate-180" : ""}`}
+          />
+        </button>
+      </div>
 
       {open && (
         <div
